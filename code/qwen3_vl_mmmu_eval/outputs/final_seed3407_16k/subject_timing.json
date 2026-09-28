@@ -1,0 +1,157 @@
+{
+  "rows": [
+    {
+      "subject": "Accounting",
+      "data_num": 30,
+      "generation_seconds": 314
+    },
+    {
+      "subject": "Agriculture",
+      "data_num": 30,
+      "generation_seconds": 14
+    },
+    {
+      "subject": "Architecture_and_Engineering",
+      "data_num": 30,
+      "generation_seconds": 591
+    },
+    {
+      "subject": "Art",
+      "data_num": 30,
+      "generation_seconds": 217
+    },
+    {
+      "subject": "Art_Theory",
+      "data_num": 30,
+      "generation_seconds": 197
+    },
+    {
+      "subject": "Basic_Medical_Science",
+      "data_num": 30,
+      "generation_seconds": 26
+    },
+    {
+      "subject": "Biology",
+      "data_num": 30,
+      "generation_seconds": 210
+    },
+    {
+      "subject": "Chemistry",
+      "data_num": 30,
+      "generation_seconds": 282
+    },
+    {
+      "subject": "Clinical_Medicine",
+      "data_num": 30,
+      "generation_seconds": 194
+    },
+    {
+      "subject": "Computer_Science",
+      "data_num": 30,
+      "generation_seconds": 246
+    },
+    {
+      "subject": "Design",
+      "data_num": 30,
+      "generation_seconds": 16
+    },
+    {
+      "subject": "Diagnostics_and_Laboratory_Medicine",
+      "data_num": 30,
+      "generation_seconds": 29
+    },
+    {
+      "subject": "Economics",
+      "data_num": 30,
+      "generation_seconds": 48
+    },
+    {
+      "subject": "Electronics",
+      "data_num": 30,
+      "generation_seconds": 345
+    },
+    {
+      "subject": "Energy_and_Power",
+      "data_num": 30,
+      "generation_seconds": 517
+    },
+    {
+      "subject": "Finance",
+      "data_num": 30,
+      "generation_seconds": 260
+    },
+    {
+      "subject": "Geography",
+      "data_num": 30,
+      "generation_seconds": 229
+    },
+    {
+      "subject": "History",
+      "data_num": 30,
+      "generation_seconds": 194
+    },
+    {
+      "subject": "Literature",
+      "data_num": 30,
+      "generation_seconds": 9
+    },
+    {
+      "subject": "Manage",
+      "data_num": 30,
+      "generation_seconds": 125
+    },
+    {
+      "subject": "Marketing",
+      "data_num": 30,
+      "generation_seconds": 156
+    },
+    {
+      "subject": "Materials",
+      "data_num": 30,
+      "generation_seconds": 412
+    },
+    {
+      "subject": "Math",
+      "data_num": 30,
+      "generation_seconds": 252
+    },
+    {
+      "subject": "Mechanical_Engineering",
+      "data_num": 30,
+      "generation_seconds": 492
+    },
+    {
+      "subject": "Music",
+      "data_num": 30,
+      "generation_seconds": 506
+    },
+    {
+      "subject": "Pharmacy",
+      "data_num": 30,
+      "generation_seconds": 220
+    },
+    {
+      "subject": "Physics",
+      "data_num": 30,
+      "generation_seconds": 206
+    },
+    {
+      "subject": "Psychology",
+      "data_num": 30,
+      "generation_seconds": 41
+    },
+    {
+      "subject": "Public_Health",
+      "data_num": 30,
+      "generation_seconds": 201
+    },
+    {
+      "subject": "Sociology",
+      "data_num": 30,
+      "generation_seconds": 12
+    }
+  ],
+  "sum_generation_seconds": 6561,
+  "source_notebook": "notebooks/runs/seed3407_final_16k.ipynb",
+  "method": "parsed from vLLM tqdm 'Processed prompts' lines preceding each 'Saved <subject>: N' line in the notebook's captured stdout"
+}
