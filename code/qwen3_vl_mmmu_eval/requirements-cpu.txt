@@ -1,0 +1,4 @@
+# Unit tests, scoring and reporting only. No torch/vLLM required.
+PyYAML==6.0.3
+Pillow==11.3.0
+pytest==8.4.2

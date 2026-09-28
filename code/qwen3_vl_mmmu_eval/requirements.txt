@@ -1,0 +1,13 @@
+# Candidate pins; NOT yet GPU-validated. See README and Colab verification.
+# After successful A100 smoke/resume tests, capture the installed environment
+# using scripts/freeze_verified_environment.py and review/commit the lock.
+vllm==0.11.0
+torch==2.8.0
+torchvision==0.23.0
+torchaudio==2.8.0
+transformers==4.57.1
+qwen-vl-utils==0.0.14
+datasets==4.2.0
+Pillow==11.3.0
+PyYAML==6.0.3
+pytest==8.4.2
