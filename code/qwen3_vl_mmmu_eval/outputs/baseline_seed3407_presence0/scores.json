@@ -1,0 +1,241 @@
+{
+  "subjects": [
+    {
+      "subject": "Accounting",
+      "data_num": 30,
+      "correct": 15,
+      "accuracy": 0.5,
+      "mean_output_tokens": 3952.4333333333334
+    },
+    {
+      "subject": "Agriculture",
+      "data_num": 30,
+      "correct": 13,
+      "accuracy": 0.43333333333333335,
+      "mean_output_tokens": 159.86666666666667
+    },
+    {
+      "subject": "Architecture_and_Engineering",
+      "data_num": 30,
+      "correct": 9,
+      "accuracy": 0.3,
+      "mean_output_tokens": 6484.4
+    },
+    {
+      "subject": "Art",
+      "data_num": 30,
+      "correct": 11,
+      "accuracy": 0.36666666666666664,
+      "mean_output_tokens": 967.5
+    },
+    {
+      "subject": "Art_Theory",
+      "data_num": 30,
+      "correct": 20,
+      "accuracy": 0.6666666666666666,
+      "mean_output_tokens": 457.0
+    },
+    {
+      "subject": "Basic_Medical_Science",
+      "data_num": 30,
+      "correct": 18,
+      "accuracy": 0.6,
+      "mean_output_tokens": 327.46666666666664
+    },
+    {
+      "subject": "Biology",
+      "data_num": 30,
+      "correct": 15,
+      "accuracy": 0.5,
+      "mean_output_tokens": 1752.8
+    },
+    {
+      "subject": "Chemistry",
+      "data_num": 30,
+      "correct": 6,
+      "accuracy": 0.2,
+      "mean_output_tokens": 4346.133333333333
+    },
+    {
+      "subject": "Clinical_Medicine",
+      "data_num": 30,
+      "correct": 15,
+      "accuracy": 0.5,
+      "mean_output_tokens": 931.0666666666667
+    },
+    {
+      "subject": "Computer_Science",
+      "data_num": 30,
+      "correct": 13,
+      "accuracy": 0.43333333333333335,
+      "mean_output_tokens": 3173.8333333333335
+    },
+    {
+      "subject": "Design",
+      "data_num": 30,
+      "correct": 17,
+      "accuracy": 0.5666666666666667,
+      "mean_output_tokens": 447.76666666666665
+    },
+    {
+      "subject": "Diagnostics_and_Laboratory_Medicine",
+      "data_num": 30,
+      "correct": 7,
+      "accuracy": 0.23333333333333334,
+      "mean_output_tokens": 1230.4333333333334
+    },
+    {
+      "subject": "Economics",
+      "data_num": 30,
+      "correct": 18,
+      "accuracy": 0.6,
+      "mean_output_tokens": 1044.8666666666666
+    },
+    {
+      "subject": "Electronics",
+      "data_num": 30,
+      "correct": 13,
+      "accuracy": 0.43333333333333335,
+      "mean_output_tokens": 4844.266666666666
+    },
+    {
+      "subject": "Energy_and_Power",
+      "data_num": 30,
+      "correct": 10,
+      "accuracy": 0.3333333333333333,
+      "mean_output_tokens": 6498.033333333334
+    },
+    {
+      "subject": "Finance",
+      "data_num": 30,
+      "correct": 14,
+      "accuracy": 0.4666666666666667,
+      "mean_output_tokens": 3146.4666666666667
+    },
+    {
+      "subject": "Geography",
+      "data_num": 30,
+      "correct": 12,
+      "accuracy": 0.4,
+      "mean_output_tokens": 2803.5333333333333
+    },
+    {
+      "subject": "History",
+      "data_num": 30,
+      "correct": 15,
+      "accuracy": 0.5,
+      "mean_output_tokens": 1182.0333333333333
+    },
+    {
+      "subject": "Literature",
+      "data_num": 30,
+      "correct": 15,
+      "accuracy": 0.5,
+      "mean_output_tokens": 183.36666666666667
+    },
+    {
+      "subject": "Manage",
+      "data_num": 30,
+      "correct": 17,
+      "accuracy": 0.5666666666666667,
+      "mean_output_tokens": 1454.4
+    },
+    {
+      "subject": "Marketing",
+      "data_num": 30,
+      "correct": 22,
+      "accuracy": 0.7333333333333333,
+      "mean_output_tokens": 1183.6666666666667
+    },
+    {
+      "subject": "Materials",
+      "data_num": 30,
+      "correct": 11,
+      "accuracy": 0.36666666666666664,
+      "mean_output_tokens": 5952.633333333333
+    },
+    {
+      "subject": "Math",
+      "data_num": 30,
+      "correct": 13,
+      "accuracy": 0.43333333333333335,
+      "mean_output_tokens": 3269.133333333333
+    },
+    {
+      "subject": "Mechanical_Engineering",
+      "data_num": 30,
+      "correct": 10,
+      "accuracy": 0.3333333333333333,
+      "mean_output_tokens": 5683.233333333334
+    },
+    {
+      "subject": "Music",
+      "data_num": 30,
+      "correct": 9,
+      "accuracy": 0.3,
+      "mean_output_tokens": 6347.066666666667
+    },
+    {
+      "subject": "Pharmacy",
+      "data_num": 30,
+      "correct": 18,
+      "accuracy": 0.6,
+      "mean_output_tokens": 1862.2
+    },
+    {
+      "subject": "Physics",
+      "data_num": 30,
+      "correct": 17,
+      "accuracy": 0.5666666666666667,
+      "mean_output_tokens": 1696.1666666666667
+    },
+    {
+      "subject": "Psychology",
+      "data_num": 30,
+      "correct": 15,
+      "accuracy": 0.5,
+      "mean_output_tokens": 701.4
+    },
+    {
+      "subject": "Public_Health",
+      "data_num": 30,
+      "correct": 19,
+      "accuracy": 0.6333333333333333,
+      "mean_output_tokens": 1618.1
+    },
+    {
+      "subject": "Sociology",
+      "data_num": 30,
+      "correct": 12,
+      "accuracy": 0.4,
+      "mean_output_tokens": 533.0
+    }
+  ],
+  "overall_macro": 0.46555555555555556,
+  "overall_micro": 0.46555555555555556,
+  "total": 900,
+  "question_type": {
+    "multiple-choice": {
+      "count": 847,
+      "correct": 399,
+      "accuracy": 0.47107438016528924
+    },
+    "open": {
+      "count": 53,
+      "correct": 20,
+      "accuracy": 0.37735849056603776
+    }
+  },
+  "method_counts": {
+    "option": 214,
+    "text": 150,
+    "regex": 221,
+    "unparsed": 312,
+    "refused": 3
+  },
+  "length_finish_ratio": 0.24,
+  "open_question_mode": "qwen_mc",
+  "partial": false,
+  "protocol_hash": "d8e8882d6602905db6bf60bf7830de52c9ac4d9a5713a234c601689c5a0ed49d",
+  "raw_outputs_sha256": "4baa470416bd5e7a248b9159196e1e5ccb9c03cf4ce06ed210491f81e2a85ea7"
+}
