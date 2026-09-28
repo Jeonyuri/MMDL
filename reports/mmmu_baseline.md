@@ -5,10 +5,6 @@
 - **작성일**: 2026-09-28
 - **재현 커맨드**: 아래 §1 참고 (생성 `scripts/run_mmmu_eval.sh` → 재채점 `scripts/rescore.py`). 실제 제출 실행은 Colab A100에서 노트북 셀로 수행했다(실행 로그: `notebooks/runs/seed3407_final_16k.ipynb`; 이전 실행에 쓰던 노트북 셀을 config/output_dir만 바꿔 재사용했다). 9개 사전 실험의 실행 로그도 `notebooks/runs/`에 있다(`notebooks/README.md` 참고).
 
-> 최종 실행(`final_seed3407_16k`)이 Colab A100에서 완료됐다(2026-09-27). 아래 값은 그 실행의 `run_meta.json`/`scores.json`과 `scripts/rescore.py`·`scripts/make_report_table.py` 출력에서 가져왔다. 
-
-> **경로 안내**: 이 문서(`reports/mmmu_baseline.md`)를 제외한 아래 모든 경로(`scripts/...`, `configs/...`, `outputs/...`, `notebooks/...`, `src/...`, `reports/...`)는 **저장소 루트의 `code/qwen3_vl_mmmu_eval/`을 기준**으로 한다. 예: `scripts/rescore.py` = `code/qwen3_vl_mmmu_eval/scripts/rescore.py`. 결과 요약본은 `results/qwen3_vl_mmmu_eval/`에도 있다.
-
 ---
 
 ## 1. 환경 / 재현성
