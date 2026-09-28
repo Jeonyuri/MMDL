@@ -1,0 +1,82 @@
+# ============================================================
+# Experiment config: seed3407_prompt.yaml
+# prompt only (step-by-step + **A** format)
+# Base = exp01 (this file family, seed 3407 = official Qwen3-VL Instruct recipe).
+# Only the variable(s) named above differ from the base.
+# ============================================================
+
+# 실행 시 --config로 이 파일이 직접 전달되지 않았다: 실제로는 configs/mmmu_eval.yaml을
+# 실행 직전에 이 파일과 같은 값으로 고쳐 썼다. 이 파일은 그 실행의 resolved_config.json과
+# 필드 단위로 대조해 값이 일치함을 확인한 사후 재구성본이다(문서화·재현용).
+
+# Protocol defaults. Changing these produces a different evaluation protocol.
+model_path: Qwen/Qwen3-VL-4B-Instruct
+model_revision: ebb281ec70b05090aa6165b016eac8ec08e71b17
+dtype: bfloat16
+dataset_path: MMMU/MMMU
+dataset_revision: 98e6ac0cb9b7b2cd2c991b85a50762edc4aedc68
+split: validation
+subjects:
+  - Accounting
+  - Agriculture
+  - Architecture_and_Engineering
+  - Art
+  - Art_Theory
+  - Basic_Medical_Science
+  - Biology
+  - Chemistry
+  - Clinical_Medicine
+  - Computer_Science
+  - Design
+  - Diagnostics_and_Laboratory_Medicine
+  - Economics
+  - Electronics
+  - Energy_and_Power
+  - Finance
+  - Geography
+  - History
+  - Literature
+  - Manage
+  - Marketing
+  - Materials
+  - Math
+  - Mechanical_Engineering
+  - Music
+  - Pharmacy
+  - Physics
+  - Psychology
+  - Public_Health
+  - Sociology
+expected_per_subject: 30
+expected_total: 900
+backend: vllm
+max_model_len: 24576 # 입력 최대 6,700 + 출력 8,192 = 14,892 < 24576
+max_new_tokens: 8192 # 공식 32768보다 작음(컴퓨팅 비용). 8k에서 14.1% 잘림
+temperature: 0.7
+top_p: 0.8
+top_k: 20
+repetition_penalty: 1.0
+presence_penalty: 1.5
+seed: 3407
+min_pixels: 1310720 # 1280 * 32 * 32 → 이미지당 1,280 토큰
+max_pixels: 5242880 # 5120 * 32 * 32 → 이미지당 5,120 토큰
+limit_mm_per_prompt: {image: 10}
+gpu_memory_utilization: 0.9
+open_question_mode: qwen_mc
+prompt:
+  role: user
+  system: null
+  content_order: images_first
+  question_template: "Question: {question}\n"
+  options_header: "Options:\n"
+  option_template: "{letter}. {opt}\n"
+  instruction: "Please reason step by step to solve the problem. End your response with the final answer formatted as **A**.\n"
+  rstrip: true
+parser:
+  version: qwen_rules_regex_v1
+  order: [option, text, regex, unparsed]
+  regex: '(?i:\banswer\s*(?:is\s*:?|:)\s*)\(?([A-I])\)?(?!\w)|\*\*([A-I])\*\*'
+  regex_selection: last_valid_match
+  unparsed_is_incorrect: true
+  refusal_is_incorrect: true
+official_reference_percent: 67.4
