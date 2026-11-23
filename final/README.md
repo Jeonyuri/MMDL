@@ -54,9 +54,10 @@ final/
 │   │       └── ViRL_RoundGRPO_v4_Validate_Step170.ipynb           step 170 검증
 │   └── final_eval/                    평가 노트북
 │       ├── run_virl39k_grpo_mmmu_900_a100_40gb.ipynb              MMMU validation 평가
-│       ├── run_final_eval_full_grpo_a100_40gb.ipynb               MMMU test·Pro 평가 (GRPO)
-│       ├── run_final_eval_full_grpo_a100_40gb_mmmu_test_run.ipynb  MMMU test 실제 실행본
-│       ├── run_final_eval_full_baseline_a100_40gb.ipynb           MMMU test·Pro 평가 (baseline)
+│       ├── run_final_eval_full_grpo_a100_40gb_mmmu_test.ipynb      MMMU test 평가 (GRPO)
+│       ├── run_final_eval_full_baseline_a100_40gb_mmmu_test.ipynb  MMMU test 평가 (baseline)
+│       ├── run_final_eval_full_grpo_a100_40gb_mmmu_pro.ipynb       MMMU-Pro 평가 (GRPO)
+│       ├── run_final_eval_full_baseline_a100_40gb_mmmu_pro.ipynb   MMMU-Pro 평가 (baseline)
 │       └── tools/                     문항 ID 생성, 결과 분석
 └── results/
     ├── grpo_training/                 보상 검증(grpo_prep_report.json), round_grpo_v4/ 실행 기록
@@ -86,7 +87,7 @@ final/
 5. **GRPO 학습 (Colab A100 80GB)**: `code/finetune/train/ViRL_RoundGRPO_4B_A100_Train_v4.ipynb`를 실행합니다(`RUN_TAG=round_grpo_v4`, `MAX_ROUNDS=3`, `LEARNING_RATE=2e-5`). 1라운드 학습 약 1.8시간, 2라운드 생성 약 4시간 + 학습 약 2.7시간(step 170까지)이 걸렸습니다. 학습 지표는 `results/grpo_training/round_grpo_v4/round_0*/train/metrics.jsonl`에 있습니다.
 6. **step 170 검증**: `code/finetune/train/ViRL_RoundGRPO_v4_Validate_Step170.ipynb`를 실행합니다.
 7. **MMMU validation 평가 (A100 40GB)**: `code/final_eval/run_virl39k_grpo_mmmu_900_a100_40gb.ipynb`를 실행합니다(`POSTHOC_CANDIDATE='round_02_step170'`). adapter 해시를 확인한 뒤 기본 모델과 병합해 평가합니다.
-8. **최종 평가 (A100 40GB)**: `code/final_eval/run_final_eval_full_grpo_a100_40gb.ipynb`와 `run_final_eval_full_baseline_a100_40gb.ipynb`를 실행합니다.
+8. **최종 평가 (A100 40GB)**: `code/final_eval/`의 `..._mmmu_test.ipynb`(MMMU test)와 `..._mmmu_pro.ipynb`(MMMU-Pro)를 모델별로 실행합니다. 노트북 첫 셀의 `PART`로 평가 세트를 고릅니다(`'mmmu_test'` 또는 `'pro'`). 다시 실행할 때는 엔진 중단 시 자동 재시도가 들어 있는 `_mmmu_test` 노트북의 코드를 쓰는 것을 권합니다.
    - 문항 ID: `../code/qwen3_vl_mmmu_eval/configs/final_eval_ids_full.json`
    - 데이터셋 고정 revision: MMMU `98e6ac0cb9b7b2cd2c991b85a50762edc4aedc68`, MMMU-Pro `0d7426df4ccb3d8704a992fe6850abee7c262127`
    - 결과 분석: `python code/final_eval/tools/analyze_final_full.py` (문항별 `scored.jsonl`을 `results/final_eval/<모델>/<세트>/`에 둔 뒤 실행)
