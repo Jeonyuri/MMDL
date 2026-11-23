@@ -1,0 +1,16 @@
+{
+  "scores": {
+    "grpo": 596,
+    "teacher_full": 550,
+    "teacher_small": 562,
+    "shortest": 571
+  },
+  "submission_model_correct": 569,
+  "adopt": null,
+  "status": "needs_confirmation",
+  "note": "594 이상: 사전 규칙에 따라 확인 재평가가 필요합니다. 0번 셀에서 CONFIRM_RUN = True로 바꾸고 0번 셀부터 다시 실행하세요(seed 42, 약 27유닛, 2시간 20분).",
+  "policy_id": "55922b8dfc2948d12f6e5190f02be0dd92804aa2ba0b78a19d2a3d533bcfc442",
+  "selected_name": "round_02_step170",
+  "posthoc_candidate": true,
+  "rule": "first eval (seed 3407) >=594 -> confirmation eval (seed 42, same adapter); adopt only if mean of both >=588; else keep submission model; no retries (pre-registered 2026-11-19)"
+}

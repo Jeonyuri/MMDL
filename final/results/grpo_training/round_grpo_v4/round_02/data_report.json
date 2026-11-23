@@ -1,0 +1,10 @@
+{
+  "eligible_groups": 1141,
+  "requested_groups": 1760,
+  "rejected": {
+    "zero_advantage_or_mc_single_hit": 614,
+    "kept_positive_only(info)": 170,
+    "Text/token roundtrip mismatch": 5
+  },
+  "samples_per_question": 8
+}

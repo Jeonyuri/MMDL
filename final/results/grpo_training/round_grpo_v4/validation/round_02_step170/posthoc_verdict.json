@@ -1,0 +1,89 @@
+{
+  "candidate": "round_02_step170",
+  "adapter": "/content/drive/MyDrive/VIRL39K_RFT_4B/round_grpo_v4/round_02/train/checkpoint_00680_00170",
+  "policy_id": "55922b8dfc2948d12f6e5190f02be0dd92804aa2ba0b78a19d2a3d533bcfc442",
+  "gpu": "NVIDIA A100-SXM4-80GB",
+  "report": {
+    "n": 1184,
+    "correct": 910,
+    "accuracy": 0.768581081081081,
+    "canonical_correct": 911,
+    "truncated": 71,
+    "truncated_fraction": 0.059966216216216214,
+    "guard_counts": {},
+    "methods": {
+      "open_checked": 645,
+      "text": 59,
+      "option": 198,
+      "regex": 106,
+      "fallback": 99,
+      "truncated": 71,
+      "open_unparsed": 5,
+      "open_or_guard": 1
+    },
+    "output_tokens_median": 492.5,
+    "output_tokens_mean": 1263.816722972973
+  },
+  "baseline": {
+    "n": 1184,
+    "correct": 894,
+    "accuracy": 0.7550675675675675,
+    "canonical_correct": 894,
+    "truncated": 80,
+    "truncated_fraction": 0.06756756756756757,
+    "guard_counts": {},
+    "methods": {
+      "open_checked": 643,
+      "truncated": 80,
+      "text": 61,
+      "option": 205,
+      "fallback": 78,
+      "regex": 110,
+      "open_unparsed": 7
+    },
+    "output_tokens_median": 501.0,
+    "output_tokens_mean": 1288.4163851351352
+  },
+  "round_01": {
+    "n": 1184,
+    "correct": 898,
+    "accuracy": 0.7584459459459459,
+    "canonical_correct": 898,
+    "truncated": 76,
+    "truncated_fraction": 0.06418918918918919,
+    "guard_counts": {},
+    "methods": {
+      "truncated": 76,
+      "open_checked": 650,
+      "text": 62,
+      "option": 204,
+      "fallback": 80,
+      "regex": 107,
+      "unparsed": 2,
+      "open_unparsed": 3
+    },
+    "output_tokens_median": 513.0,
+    "output_tokens_mean": 1304.995777027027
+  },
+  "margin_samples": 12,
+  "threshold_correct": 906,
+  "passed": true,
+  "length_guard_reasons": [],
+  "paired_vs_base": {
+    "better": 42,
+    "worse": 31,
+    "same": 223,
+    "sign_test_p_two_sided": 0.24164472314075197,
+    "net_samples": 16
+  },
+  "paired_vs_round_01": {
+    "better": 45,
+    "worse": 35,
+    "same": 216,
+    "sign_test_p_two_sided": 0.31430657986393706,
+    "net_samples": 12
+  },
+  "decision": "통과: MMMU 900(40GB) 평가는 round_01 대신 이 checkpoint로 (사후 추가 후보, 보고서에 명시)",
+  "rule": "post-hoc (2026-11-21): same as choose(); >= base+margin and length guards -> MMMU eval this checkpoint instead of round_01",
+  "created": "2026-11-21T05:33:43Z"
+}

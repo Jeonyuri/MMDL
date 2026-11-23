@@ -1,0 +1,43 @@
+{
+  "variant": "grpo",
+  "run_tag": "round_grpo_v4",
+  "selected_name": "round_02_step170",
+  "policy_id": "55922b8dfc2948d12f6e5190f02be0dd92804aa2ba0b78a19d2a3d533bcfc442",
+  "posthoc_candidate": true,
+  "virl_proxy_gain": 16,
+  "required_gpu": "NVIDIA A100-SXM4-40GB",
+  "experiment": "virl39k_grpo_round_grpo_v4_round_02_step170_seed3407_16k_a100_40gb",
+  "new_correct": 596,
+  "trunc_pct": 2.4444444444444446,
+  "median_output_tokens": 455.5,
+  "vs_baseline": {
+    "loss_other": 50,
+    "gain_other": 48,
+    "gain_trunc": 26,
+    "loss_trunc": 3,
+    "resolved": 71,
+    "newly": 11,
+    "trunc_a": 82,
+    "trunc_b": 22,
+    "net_trunc": 23,
+    "net_other": -2
+  },
+  "submission_model_correct": 569,
+  "submission_model_trunc_pct": 5.888888888888889,
+  "vs_submission_model": {
+    "loss_other": 50,
+    "gain_trunc": 15,
+    "gain_other": 66,
+    "loss_trunc": 4,
+    "resolved": 44,
+    "newly": 13,
+    "trunc_a": 53,
+    "trunc_b": 22,
+    "net_trunc": 11,
+    "net_other": 16
+  },
+  "verdict": "사전 지정 통과선 통과 (≥594)",
+  "passes_594": true,
+  "seed": 3407,
+  "confirm_run": false
+}

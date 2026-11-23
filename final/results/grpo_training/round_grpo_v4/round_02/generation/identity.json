@@ -1,0 +1,9 @@
+{
+  "requests": "/content/drive/MyDrive/VIRL39K_RFT_4B/round_grpo_v4/round_02/requests_PRIVATE.jsonl",
+  "output": "/content/drive/MyDrive/VIRL39K_RFT_4B/round_grpo_v4/round_02/generation",
+  "model_path": "/content/virl_round_grpo/merged/3ea65eaf69ed88f350cc",
+  "policy_id": "3ea65eaf69ed88f350cc6b7f8231aad06e0cb3979b0ef1fc4a9fce1ed1196574",
+  "samples": 8,
+  "chunk_questions": 256,
+  "requests_sha256": "4921b7cbdd86b590288803e1d7058bf991da54b829e33456f6bd3ba48fc679e5"
+}

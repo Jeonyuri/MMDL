@@ -1,0 +1,350 @@
+{
+  "experiment": "virl39k_grpo_round_grpo_v4_round_02_step170_seed3407_16k_a100_40gb",
+  "variant": "grpo",
+  "adapter_pct": null,
+  "runs": {
+    "new": {
+      "n": 900,
+      "correct": 596,
+      "acc": 66.22222222222223,
+      "acc_mc": 67.29634002361276,
+      "acc_open": 49.056603773584904,
+      "mean_output_tokens": 2122.4177777777777,
+      "median_output_tokens": 455.5,
+      "trunc_pct": 2.4444444444444446,
+      "unparsed_pct": 3.888888888888889,
+      "methods": {
+        "fallback": 208,
+        "regex": 281,
+        "option": 192,
+        "text": 184,
+        "unparsed": 35
+      }
+    },
+    "baseline": {
+      "n": 900,
+      "correct": 575,
+      "acc": 63.888888888888886,
+      "acc_mc": 64.93506493506493,
+      "acc_open": 47.16981132075472,
+      "mean_output_tokens": 2780.91,
+      "median_output_tokens": 480.5,
+      "trunc_pct": 9.11111111111111,
+      "unparsed_pct": 8.777777777777779,
+      "methods": {
+        "option": 206,
+        "fallback": 194,
+        "regex": 245,
+        "unparsed": 79,
+        "text": 176
+      }
+    },
+    "prev_rft": {
+      "n": 900,
+      "correct": 569,
+      "acc": 63.22222222222222,
+      "acc_mc": 64.46280991735537,
+      "acc_open": 43.39622641509434,
+      "mean_output_tokens": 2364.443333333333,
+      "median_output_tokens": 441.5,
+      "trunc_pct": 5.888888888888889,
+      "unparsed_pct": 6.333333333333333,
+      "methods": {
+        "regex": 219,
+        "fallback": 248,
+        "unparsed": 57,
+        "text": 184,
+        "option": 192
+      }
+    }
+  },
+  "format": {
+    "starts_with_Evidence": 0,
+    "has_Reasoning": 9,
+    "has_Final_Answer": 378
+  },
+  "final_answer_vs_parser": {
+    "n_with_final_answer": 378,
+    "mismatch": 9,
+    "mismatch_final_answer_correct": 4,
+    "mismatch_parser_correct": 0,
+    "final_answer_letter_correct": 251
+  },
+  "paired_vs_baseline": {
+    "gain": 74,
+    "loss": 53,
+    "p": 0.0755305592306964
+  },
+  "per_subject": [
+    {
+      "subject": "Accounting",
+      "baseline": 23,
+      "new": 22,
+      "n": 30,
+      "delta": -1,
+      "baseline_tokens": 4382.7,
+      "new_tokens": 3503.3
+    },
+    {
+      "subject": "Agriculture",
+      "baseline": 15,
+      "new": 14,
+      "n": 30,
+      "delta": -1,
+      "baseline_tokens": 165.8,
+      "new_tokens": 166.8
+    },
+    {
+      "subject": "Architecture_and_Engineering",
+      "baseline": 15,
+      "new": 18,
+      "n": 30,
+      "delta": 3,
+      "baseline_tokens": 10011.6,
+      "new_tokens": 8194.7
+    },
+    {
+      "subject": "Art",
+      "baseline": 17,
+      "new": 18,
+      "n": 30,
+      "delta": 1,
+      "baseline_tokens": 1324.8,
+      "new_tokens": 435.0
+    },
+    {
+      "subject": "Art_Theory",
+      "baseline": 25,
+      "new": 24,
+      "n": 30,
+      "delta": -1,
+      "baseline_tokens": 882.6,
+      "new_tokens": 401.6
+    },
+    {
+      "subject": "Basic_Medical_Science",
+      "baseline": 23,
+      "new": 22,
+      "n": 30,
+      "delta": -1,
+      "baseline_tokens": 344.9,
+      "new_tokens": 466.5
+    },
+    {
+      "subject": "Biology",
+      "baseline": 15,
+      "new": 18,
+      "n": 30,
+      "delta": 3,
+      "baseline_tokens": 1474.7,
+      "new_tokens": 1242.2
+    },
+    {
+      "subject": "Chemistry",
+      "baseline": 15,
+      "new": 15,
+      "n": 30,
+      "delta": 0,
+      "baseline_tokens": 3526.6,
+      "new_tokens": 2383.9
+    },
+    {
+      "subject": "Clinical_Medicine",
+      "baseline": 21,
+      "new": 24,
+      "n": 30,
+      "delta": 3,
+      "baseline_tokens": 1159.7,
+      "new_tokens": 661
+    },
+    {
+      "subject": "Computer_Science",
+      "baseline": 17,
+      "new": 21,
+      "n": 30,
+      "delta": 4,
+      "baseline_tokens": 2649.6,
+      "new_tokens": 2070.0
+    },
+    {
+      "subject": "Design",
+      "baseline": 24,
+      "new": 24,
+      "n": 30,
+      "delta": 0,
+      "baseline_tokens": 216.3,
+      "new_tokens": 271.2
+    },
+    {
+      "subject": "Diagnostics_and_Laboratory_Medicine",
+      "baseline": 9,
+      "new": 9,
+      "n": 30,
+      "delta": 0,
+      "baseline_tokens": 524.3,
+      "new_tokens": 541.5
+    },
+    {
+      "subject": "Economics",
+      "baseline": 26,
+      "new": 25,
+      "n": 30,
+      "delta": -1,
+      "baseline_tokens": 713.1,
+      "new_tokens": 661.3
+    },
+    {
+      "subject": "Electronics",
+      "baseline": 20,
+      "new": 18,
+      "n": 30,
+      "delta": -2,
+      "baseline_tokens": 6072.0,
+      "new_tokens": 5238.0
+    },
+    {
+      "subject": "Energy_and_Power",
+      "baseline": 16,
+      "new": 20,
+      "n": 30,
+      "delta": 4,
+      "baseline_tokens": 9179.6,
+      "new_tokens": 6643.9
+    },
+    {
+      "subject": "Finance",
+      "baseline": 19,
+      "new": 21,
+      "n": 30,
+      "delta": 2,
+      "baseline_tokens": 3068.9,
+      "new_tokens": 2460.6
+    },
+    {
+      "subject": "Geography",
+      "baseline": 17,
+      "new": 16,
+      "n": 30,
+      "delta": -1,
+      "baseline_tokens": 2438.5,
+      "new_tokens": 1337.7
+    },
+    {
+      "subject": "History",
+      "baseline": 20,
+      "new": 21,
+      "n": 30,
+      "delta": 1,
+      "baseline_tokens": 1056.6,
+      "new_tokens": 582.3
+    },
+    {
+      "subject": "Literature",
+      "baseline": 25,
+      "new": 24,
+      "n": 30,
+      "delta": -1,
+      "baseline_tokens": 192.3,
+      "new_tokens": 198.5
+    },
+    {
+      "subject": "Manage",
+      "baseline": 17,
+      "new": 19,
+      "n": 30,
+      "delta": 2,
+      "baseline_tokens": 1102.6,
+      "new_tokens": 1329.7
+    },
+    {
+      "subject": "Marketing",
+      "baseline": 27,
+      "new": 24,
+      "n": 30,
+      "delta": -3,
+      "baseline_tokens": 1099.3,
+      "new_tokens": 1495.8
+    },
+    {
+      "subject": "Materials",
+      "baseline": 15,
+      "new": 15,
+      "n": 30,
+      "delta": 0,
+      "baseline_tokens": 7574,
+      "new_tokens": 7029.4
+    },
+    {
+      "subject": "Math",
+      "baseline": 18,
+      "new": 22,
+      "n": 30,
+      "delta": 4,
+      "baseline_tokens": 3230.8,
+      "new_tokens": 2279.2
+    },
+    {
+      "subject": "Mechanical_Engineering",
+      "baseline": 11,
+      "new": 15,
+      "n": 30,
+      "delta": 4,
+      "baseline_tokens": 8067.5,
+      "new_tokens": 5059.3
+    },
+    {
+      "subject": "Music",
+      "baseline": 9,
+      "new": 11,
+      "n": 30,
+      "delta": 2,
+      "baseline_tokens": 7062.5,
+      "new_tokens": 4444.7
+    },
+    {
+      "subject": "Pharmacy",
+      "baseline": 24,
+      "new": 26,
+      "n": 30,
+      "delta": 2,
+      "baseline_tokens": 1845.6,
+      "new_tokens": 1273.1
+    },
+    {
+      "subject": "Physics",
+      "baseline": 24,
+      "new": 23,
+      "n": 30,
+      "delta": -1,
+      "baseline_tokens": 1839.9,
+      "new_tokens": 1189.5
+    },
+    {
+      "subject": "Psychology",
+      "baseline": 23,
+      "new": 24,
+      "n": 30,
+      "delta": 1,
+      "baseline_tokens": 510.7,
+      "new_tokens": 577.3
+    },
+    {
+      "subject": "Public_Health",
+      "baseline": 27,
+      "new": 24,
+      "n": 30,
+      "delta": -3,
+      "baseline_tokens": 1433.4,
+      "new_tokens": 1254.4
+    },
+    {
+      "subject": "Sociology",
+      "baseline": 18,
+      "new": 19,
+      "n": 30,
+      "delta": 1,
+      "baseline_tokens": 276.4,
+      "new_tokens": 279.9
+    }
+  ]
+}

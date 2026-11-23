@@ -1,0 +1,21 @@
+{
+  "n": 1184,
+  "correct": 910,
+  "accuracy": 0.768581081081081,
+  "canonical_correct": 911,
+  "truncated": 71,
+  "truncated_fraction": 0.059966216216216214,
+  "guard_counts": {},
+  "methods": {
+    "open_checked": 645,
+    "text": 59,
+    "option": 198,
+    "regex": 106,
+    "fallback": 99,
+    "truncated": 71,
+    "open_unparsed": 5,
+    "open_or_guard": 1
+  },
+  "output_tokens_median": 492.5,
+  "output_tokens_mean": 1263.816722972973
+}
