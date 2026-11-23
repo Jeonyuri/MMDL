@@ -1,0 +1,122 @@
+{
+  "sets": {
+    "mmmu_test": {
+      "name": "MMMU test 10500",
+      "n": 10500,
+      "gpu": "NVIDIA A100-SXM4-40GB",
+      "baseline": 6437,
+      "submission": 6638,
+      "baseline_acc": 0.6130476190476191,
+      "submission_acc": 0.6321904761904762,
+      "net": 201,
+      "gain": 892,
+      "loss": 691,
+      "mcnemar_p": 4.82270359170709e-07,
+      "trunc_pct": {
+        "baseline": 11.742857142857142,
+        "submission": 2.361904761904762
+      },
+      "median_tokens": {
+        "baseline": 563.0,
+        "submission": 572.0
+      },
+      "interpretation": "submission higher beyond ~2 SD"
+    },
+    "pro_standard": {
+      "name": "MMMU-Pro standard(10) 1730",
+      "n": 1730,
+      "gpu": "NVIDIA A100-SXM4-40GB",
+      "baseline": 888,
+      "submission": 937,
+      "baseline_acc": 0.5132947976878612,
+      "submission_acc": 0.5416184971098266,
+      "net": 49,
+      "gain": 171,
+      "loss": 122,
+      "mcnemar_p": 0.004958522930712222,
+      "trunc_pct": {
+        "baseline": 14.16184971098266,
+        "submission": 3.2947976878612715
+      },
+      "median_tokens": {
+        "baseline": 739.0,
+        "submission": 716.5
+      },
+      "interpretation": "submission higher beyond ~2 SD",
+      "reference_official_with_guess": {
+        "baseline": 923,
+        "submission": 945
+      },
+      "by_origin": {
+        "baseline": {
+          "test": {
+            "n": 1153,
+            "correct": 609
+          },
+          "validation": {
+            "n": 577,
+            "correct": 279
+          }
+        },
+        "submission": {
+          "test": {
+            "n": 1153,
+            "correct": 634
+          },
+          "validation": {
+            "n": 577,
+            "correct": 303
+          }
+        }
+      }
+    },
+    "pro_vision": {
+      "name": "MMMU-Pro vision 1730",
+      "n": 1730,
+      "gpu": "NVIDIA A100-SXM4-40GB",
+      "baseline": 841,
+      "submission": 881,
+      "baseline_acc": 0.4861271676300578,
+      "submission_acc": 0.5092485549132948,
+      "net": 40,
+      "gain": 155,
+      "loss": 115,
+      "mcnemar_p": 0.01745966291294211,
+      "trunc_pct": {
+        "baseline": 13.815028901734104,
+        "submission": 3.815028901734104
+      },
+      "median_tokens": {
+        "baseline": 888.0,
+        "submission": 890.0
+      },
+      "interpretation": "submission higher beyond ~2 SD",
+      "reference_official_with_guess": {
+        "baseline": 884,
+        "submission": 894
+      },
+      "by_origin": {
+        "baseline": {
+          "test": {
+            "n": 1153,
+            "correct": 566
+          },
+          "validation": {
+            "n": 577,
+            "correct": 275
+          }
+        },
+        "submission": {
+          "test": {
+            "n": 1153,
+            "correct": 596
+          },
+          "validation": {
+            "n": 577,
+            "correct": 285
+          }
+        }
+      }
+    }
+  }
+}

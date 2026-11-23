@@ -1,0 +1,66 @@
+{
+  "set": "mmmu_test",
+  "n": 10500,
+  "correct": 6638,
+  "accuracy": 0.6321904761904762,
+  "truncated": 248,
+  "trunc_pct": 2.361904761904762,
+  "mean_output_tokens": 2492.9,
+  "median_output_tokens": 572.0,
+  "methods": {
+    "text": 2280,
+    "regex": 3276,
+    "option": 2245,
+    "fallback": 2198,
+    "unparsed": 498,
+    "refused": 3
+  },
+  "per_subject": {
+    "Accounting": 321,
+    "Agriculture": 147,
+    "Architecture_and_Engineering": 283,
+    "Art": 167,
+    "Art_Theory": 308,
+    "Basic_Medical_Science": 215,
+    "Biology": 195,
+    "Chemistry": 317,
+    "Clinical_Medicine": 185,
+    "Computer_Science": 234,
+    "Design": 131,
+    "Diagnostics_and_Laboratory_Medicine": 69,
+    "Economics": 216,
+    "Electronics": 146,
+    "Energy_and_Power": 269,
+    "Finance": 238,
+    "Geography": 286,
+    "History": 218,
+    "Literature": 94,
+    "Manage": 131,
+    "Marketing": 153,
+    "Materials": 244,
+    "Math": 335,
+    "Mechanical_Engineering": 224,
+    "Music": 117,
+    "Pharmacy": 319,
+    "Physics": 316,
+    "Psychology": 228,
+    "Public_Health": 363,
+    "Sociology": 169
+  },
+  "question_type": {
+    "multiple-choice": {
+      "n": 9873,
+      "correct": 6384
+    },
+    "open": {
+      "n": 627,
+      "correct": 254
+    }
+  },
+  "model_tag": "grpo_v4_step170",
+  "gpu": "NVIDIA A100-SXM4-40GB",
+  "seed": 3407,
+  "max_model_len_used": 26624,
+  "ids_sha256": "b0fdacad4993c1556eee93395a202be86fcf9ea4e3a6f25011288a53360d4c66",
+  "run_fingerprint": "c2932189d58e3c6b50dbb8e632b59dcf547730998c47ea6e0cf77779f5134d7b"
+}

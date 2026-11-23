@@ -1,0 +1,128 @@
+{
+  "reward_version": "grpo-reward-v1",
+  "date": "2026-11-19",
+  "reward_checks": {
+    "reproduces_v3_item_counts": {
+      "open_True": 3525,
+      "mc_True": 2468,
+      "open_False": 3
+    },
+    "mmmu_baseline_mc_reward_vs_v2": {
+      "ok|v2=0|reward=0": 225,
+      "ok|v2=1|reward=1": 546,
+      "trunc|v2=0|reward=0": 72,
+      "trunc|v2=1|reward=0": 4
+    },
+    "old_notebook_vs_new_samples": {
+      "mc|old=0|new=0": 2382,
+      "mc|old=0|new=1": 612,
+      "mc|old=1|new=0": 157,
+      "mc|old=1|new=1": 6721,
+      "open|old=0|new=0": 3187,
+      "open|old=0|new=1": 1115,
+      "open|old=1|new=0": 40,
+      "open|old=1|new=1": 9770
+    },
+    "methods": {
+      "mc|mc_fallback|r=0": 257,
+      "mc|mc_fallback|r=1": 1579,
+      "mc|mc_option|r=0": 625,
+      "mc|mc_option|r=1": 2850,
+      "mc|mc_regex|r=0": 531,
+      "mc|mc_regex|r=1": 1722,
+      "mc|mc_regex|masked|r=0": 78,
+      "mc|mc_regex|masked|r=1": 11,
+      "mc|mc_text|r=0": 244,
+      "mc|mc_text|r=1": 1161,
+      "mc|mc_text|masked|r=0": 137,
+      "mc|mc_text|masked|r=1": 10,
+      "mc|mc_unparsed|r=0": 13,
+      "mc|truncated|r=0": 654,
+      "open|open_or_guard|r=0": 4,
+      "open|open_unparsed|r=0": 227,
+      "open|open_v3|r=0": 2294,
+      "open|open_v3|r=1": 10885,
+      "open|truncated|r=0": 702
+    }
+  },
+  "items": {
+    "pool": 5996,
+    "val": 296,
+    "train": 5700,
+    "round1_active_train": 1147,
+    "excluded_val_overlap": 13,
+    "excluded_gold_self_check": 0,
+    "excluded_masked_no_contrast": 37,
+    "gold_self_check_fail_all_pool": 6,
+    "old_notebook_set": 1060,
+    "kept_from_old": 965,
+    "dropped_from_old": 95,
+    "added_vs_old": 182,
+    "dropped_from_old_by_k": {
+      "mc_k2": 16,
+      "mc_k3": 26,
+      "open_k0": 3,
+      "open_k1": 2,
+      "open_k2": 2,
+      "open_k3": 1,
+      "open_k4": 45
+    },
+    "added_by_status_v3": {
+      "correct_0_of_4": 1,
+      "easy_4of4": 1,
+      "hard": 22,
+      "hard_no_valid_target": 158
+    },
+    "by_kind": {
+      "mc": 352,
+      "open": 795
+    },
+    "by_category": {
+      "(GradeSchool) Geometric": 124,
+      "(GradeSchool) Non-Geo Math": 234,
+      "(GradeSchool) Science": 177,
+      "Broader STEM Topics": 46,
+      "Social Science": 78,
+      "Spatial Reasoning": 152,
+      "Tables/Diagrams/Charts": 336
+    },
+    "old_by_category": {
+      "(GradeSchool) Geometric": 103,
+      "(GradeSchool) Non-Geo Math": 218,
+      "(GradeSchool) Science": 167,
+      "Broader STEM Topics": 38,
+      "Social Science": 93,
+      "Spatial Reasoning": 132,
+      "Tables/Diagrams/Charts": 309
+    },
+    "by_k": {
+      "mc_k2": 152,
+      "mc_k3": 200,
+      "open_k1": 196,
+      "open_k2": 231,
+      "open_k3": 368
+    },
+    "tags": {
+      "has_truncated": 366,
+      "was_no_valid_target": 158,
+      "long_correct": 220
+    },
+    "not_active_train_by_k": {
+      "mc_k0": 334,
+      "mc_k1": 171,
+      "mc_k4": 1443,
+      "open_k0": 409,
+      "open_k4": 2146
+    }
+  },
+  "round1_samples": {
+    "samples": 4588,
+    "masked_mc_conflict": 17,
+    "positive_adv": 2661,
+    "negative_adv": 1910,
+    "negative_truncated": 518,
+    "completion_tokens": 9097893,
+    "prompt_tokens_incl_image": 6494785,
+    "completion_tokens_median": 1028.5
+  }
+}

@@ -1,0 +1,53 @@
+# 비공개 데이터: 학습 데이터 원문·이미지·생성 풀이 (ViRL39K·PMC-VQA 라이선스상 재배포하지 않음)
+*_PRIVATE*
+*_private*
+mutimodal_private/
+**/pool_for_colab/
+virl39k_pool.zip
+*.parquet
+*.arrow
+*.npz
+
+# 모델 가중치·체크포인트·adapter
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+**/adapters/
+**/merged_model*/
+**/checkpoint-*/
+**/grpo_model/
+
+# 최종 평가(MMMU test·MMMU-Pro) 문항별 출력: 정답·응답 원문 포함 → 집계(scores.json, run_meta.json, analysis_full.*)만 공개
+final/results/final_eval/**/raw_outputs.jsonl
+final/results/final_eval/**/scored.jsonl
+final/results/final_eval/**/stdout.log
+final/results/final_eval/**/input_lengths.json
+final/results/final_eval/**/vram_samples.jsonl
+# 학습 실행 폴더에서 받을 수 있는 대용량·비공개 산출물
+final/results/grpo_training/**/optimizer.pt
+final/results/grpo_training/**/scores.jsonl
+
+# 데이터셋·모델 캐시
+**/mmmu_dataset_cache/
+**/hf_cache/
+**/.cache/
+
+# 내부 문서 (공개하지 않음)
+**/internal/
+CLAUDE.md
+**/parse_v3.py
+**/*parse_v3*
+
+# Python / Jupyter / 실행 부산물
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ipynb_checkpoints/
+.run.lock
+
+# OS / 에디터
+.DS_Store

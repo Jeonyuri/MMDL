@@ -1,0 +1,34 @@
+{
+  "rows": 5996,
+  "dropped": {
+    "blank_or_tiny_image": 22,
+    "cjk_in_text": 0,
+    "empty_question": 0,
+    "image_error": 0
+  },
+  "by_category": {
+    "Tables/Diagrams/Charts": 1509,
+    "(GradeSchool) Non-Geo Math": 1451,
+    "(GradeSchool) Science": 895,
+    "Spatial Reasoning": 620,
+    "(GradeSchool) Geometric": 616,
+    "Broader STEM Topics": 456,
+    "Social Science": 449
+  },
+  "by_kind": {
+    "open": 3528,
+    "mc": 2468
+  },
+  "by_gold_kind": {
+    "number": 2628,
+    "letter": 2468,
+    "short_other": 900
+  },
+  "candidates_sha256": "f5f608f5e4e45df63fadfb2b168bcca2a452284ae2bad1afa7f32b37594bbd3e",
+  "source": "TIGER-Lab/ViRL39K @ 812ec617dea4bc8a4e751663b88e4ebb7de4d00e (MIT card; upstream terms vary)",
+  "leak_thresholds": {
+    "phash": 10,
+    "clip": 0.97,
+    "text": 0.84
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "set": "pro_vision",
+  "n": 1730,
+  "correct": 841,
+  "accuracy": 0.4861271676300578,
+  "truncated": 239,
+  "trunc_pct": 13.815028901734104,
+  "mean_output_tokens": 3939.450867052023,
+  "median_output_tokens": 888.0,
+  "methods": {
+    "official": 1491,
+    "truncated": 239
+  },
+  "per_subject": {
+    "Accounting": 46,
+    "Agriculture": 10,
+    "Architecture_and_Engineering": 19,
+    "Art": 23,
+    "Art_Theory": 27,
+    "Basic_Medical_Science": 17,
+    "Biology": 26,
+    "Chemistry": 28,
+    "Clinical_Medicine": 20,
+    "Computer_Science": 29,
+    "Design": 34,
+    "Diagnostics_and_Laboratory_Medicine": 11,
+    "Economics": 44,
+    "Electronics": 19,
+    "Energy_and_Power": 20,
+    "Finance": 48,
+    "Geography": 21,
+    "History": 30,
+    "Literature": 32,
+    "Manage": 29,
+    "Marketing": 45,
+    "Materials": 23,
+    "Math": 38,
+    "Mechanical_Engineering": 20,
+    "Music": 10,
+    "Pharmacy": 36,
+    "Physics": 36,
+    "Psychology": 27,
+    "Public_Health": 43,
+    "Sociology": 30
+  },
+  "reference_official_with_guess": {
+    "correct": 884,
+    "accuracy": 0.5109826589595375
+  },
+  "by_origin": {
+    "test": {
+      "n": 1153,
+      "correct": 566
+    },
+    "validation": {
+      "n": 577,
+      "correct": 275
+    }
+  },
+  "model_tag": "baseline",
+  "gpu": "NVIDIA A100-SXM4-40GB",
+  "seed": 3407,
+  "max_model_len_used": 24576,
+  "ids_sha256": "b0fdacad4993c1556eee93395a202be86fcf9ea4e3a6f25011288a53360d4c66",
+  "run_fingerprint": "40cd614d584ad91b6c1a3edaf83f7119f61c76c66c0b75e57958eefc8899a481"
+}

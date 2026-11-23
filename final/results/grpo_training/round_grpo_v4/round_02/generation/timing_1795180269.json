@@ -1,0 +1,8 @@
+{
+  "load_seconds": 56.763749557001574,
+  "generation_seconds": 14601.202995591,
+  "samples": 14080,
+  "output_tokens": 27427330,
+  "gpu": "NVIDIA A100-SXM4-80GB",
+  "vllm": "0.11.0"
+}

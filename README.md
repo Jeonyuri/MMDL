@@ -1,10 +1,34 @@
-# MMDL — Assignment 1: Qwen3-VL-4B-Instruct MMMU-val Baseline
+# MMDL — Qwen3-VL-4B-Instruct MMMU 성능 개선 (팀 x64)
 
-## 구조
+## 최종 제출물 → [`final/`](final/README.md)
 
-```
+최종 모델은 **ViRL39K로 학습한 GRPO(정답 보상 학습) LoRA 모델**입니다. 결과·방법·학습 설정·재현 순서는 [`final/README.md`](final/README.md)에 있습니다.
+
+| 평가 세트 | Baseline | GRPO (최종) | 차이 |
+| --- | ---: | ---: | ---: |
+| MMMU validation (900) | 63.89% | 66.22% | +2.33%p |
+| MMMU test (10,500) | 61.30% | 63.22% | +1.91%p |
+| MMMU-Pro standard (1,730) | 51.33% | 54.16% | +2.83%p |
+| MMMU-Pro vision (1,730) | 48.61% | 50.92% | +2.31%p |
+
+| 과제 요구 항목 | 위치 |
+| --- | --- |
+| Assignment | [`reports/mmmu_baseline.md`](reports/mmmu_baseline.md) (Assignment 1 보고서) |
+| Evaluation code | [`code/qwen3_vl_mmmu_eval/`](code/qwen3_vl_mmmu_eval/) (baseline·최종 평가 모듈), [`final/code/final_eval/`](final/code/final_eval/) |
+| Fine-tuning code | [`final/code/finetune/`](final/code/finetune/) |
+| Experimental settings and results | [`results/`](results/) (baseline), [`final/results/`](final/results/) (최종 모델) |
+| README with instructions | 이 문서, [`final/README.md`](final/README.md) |
+
+---
+
+## Assignment 1: MMMU-val Baseline
+
+### 구조
+
+```text
 MMDL/
 ├── README.md                 (이 파일)
+├── final/                    최종 제출물 (GRPO 학습·평가 코드, 결과)
 ├── reports/
 │   └── mmmu_baseline.md      제출 보고서 (§1~§8, SUBMISSION_TEMPLATE.md 양식)
 ├── code/
@@ -13,7 +37,7 @@ MMDL/
     └── qwen3_vl_mmmu_eval/   핵심 결과 요약 (점수표, config, 재채점/검수 근거)
 ```
 
-## 한 커맨드로 재현하기
+### 한 커맨드로 재현하기
 
 `code/qwen3_vl_mmmu_eval/`에서 실행한다. `MODEL_PATH`/`DATA_ROOT`/`OUTPUT_ROOT`를 채우면 생성(A100 필요) → v2 재채점(CPU) → §5 표 생성까지 한 번에 돈다.
 
@@ -39,7 +63,7 @@ bash scripts/run_mmmu_eval.sh \
 
 세부 실행 환경(GPU, 의존성 버전, 소요 시간), 프롬프트, 생성 설정, 채점 방식, 결과, 공식 수치 대비 격차 분석은 [`reports/mmmu_baseline.md`](reports/mmmu_baseline.md)에 있다.
 
-## 설치
+### 설치
 
 ```bash
 cd code/qwen3_vl_mmmu_eval

@@ -1,0 +1,108 @@
+{
+  "baseline": {
+    "n": 1184,
+    "correct": 894,
+    "accuracy": 0.7550675675675675,
+    "canonical_correct": 894,
+    "truncated": 80,
+    "truncated_fraction": 0.06756756756756757,
+    "guard_counts": {},
+    "methods": {
+      "open_checked": 643,
+      "truncated": 80,
+      "text": 61,
+      "option": 205,
+      "fallback": 78,
+      "regex": 110,
+      "open_unparsed": 7
+    },
+    "output_tokens_median": 501.0,
+    "output_tokens_mean": 1288.4163851351352
+  },
+  "candidates": [
+    {
+      "name": "base",
+      "adapter": null,
+      "policy_id": "base@ebb281ec70b05090aa6165b016eac8ec08e71b17",
+      "report": {
+        "n": 1184,
+        "correct": 894,
+        "accuracy": 0.7550675675675675,
+        "canonical_correct": 894,
+        "truncated": 80,
+        "truncated_fraction": 0.06756756756756757,
+        "guard_counts": {},
+        "methods": {
+          "open_checked": 643,
+          "truncated": 80,
+          "text": 61,
+          "option": 205,
+          "fallback": 78,
+          "regex": 110,
+          "open_unparsed": 7
+        },
+        "output_tokens_median": 501.0,
+        "output_tokens_mean": 1288.4163851351352
+      }
+    },
+    {
+      "name": "round_01",
+      "adapter": "/content/drive/MyDrive/VIRL39K_RFT_4B/round_grpo_v4/round_01/train/checkpoint_01160_00290",
+      "policy_id": "3ea65eaf69ed88f350cc6b7f8231aad06e0cb3979b0ef1fc4a9fce1ed1196574",
+      "report": {
+        "n": 1184,
+        "correct": 898,
+        "accuracy": 0.7584459459459459,
+        "canonical_correct": 898,
+        "truncated": 76,
+        "truncated_fraction": 0.06418918918918919,
+        "guard_counts": {},
+        "methods": {
+          "truncated": 76,
+          "open_checked": 650,
+          "text": 62,
+          "option": 204,
+          "fallback": 80,
+          "regex": 107,
+          "unparsed": 2,
+          "open_unparsed": 3
+        },
+        "output_tokens_median": 513.0,
+        "output_tokens_mean": 1304.995777027027
+      },
+      "training_status": "complete",
+      "processed_groups": 1160
+    }
+  ],
+  "selected": {
+    "name": "base",
+    "adapter": null,
+    "policy_id": "base@ebb281ec70b05090aa6165b016eac8ec08e71b17",
+    "report": {
+      "n": 1184,
+      "correct": 894,
+      "accuracy": 0.7550675675675675,
+      "canonical_correct": 894,
+      "truncated": 80,
+      "truncated_fraction": 0.06756756756756757,
+      "guard_counts": {},
+      "methods": {
+        "open_checked": 643,
+        "truncated": 80,
+        "text": 61,
+        "option": 205,
+        "fallback": 78,
+        "regex": 110,
+        "open_unparsed": 7
+      },
+      "output_tokens_median": 501.0,
+      "output_tokens_mean": 1288.4163851351352
+    }
+  },
+  "margin_samples": 12,
+  "length_guard_rejected": [],
+  "length_guard": {
+    "max_val_truncation_increase": 0.03,
+    "min_val_median_length_ratio": 0.7
+  }
+}

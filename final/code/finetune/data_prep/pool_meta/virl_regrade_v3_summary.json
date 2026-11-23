@@ -1,0 +1,41 @@
+{
+  "n": 5996,
+  "status_v1": {
+    "easy_4of4": 3211,
+    "hard": 1122,
+    "correct_0_of_4": 822,
+    "easy_4of4_no_valid_target": 499,
+    "correct_1_of_4": 178,
+    "hard_no_valid_target": 164
+  },
+  "status_v3": {
+    "easy_4of4": 3279,
+    "correct_0_of_4": 781,
+    "easy_4of4_no_valid_target": 498,
+    "hard": 1094,
+    "correct_1_of_4": 178,
+    "hard_no_valid_target": 166
+  },
+  "transitions": {
+    "hard -> easy_4of4": 47,
+    "correct_0_of_4 -> easy_4of4": 23,
+    "correct_0_of_4 -> hard": 19,
+    "hard -> correct_0_of_4": 3,
+    "easy_4of4_no_valid_target -> hard_no_valid_target": 3,
+    "easy_4of4 -> hard": 2,
+    "correct_0_of_4 -> hard_no_valid_target": 1,
+    "correct_0_of_4 -> easy_4of4_no_valid_target": 1,
+    "hard_no_valid_target -> easy_4of4_no_valid_target": 1,
+    "hard_no_valid_target -> hard": 1
+  },
+  "changed_samples": 244,
+  "changed_by_rule": {
+    "number_words": 126,
+    "yes_no": 67,
+    "int_fix": 18,
+    "percent": 15,
+    "interval": 14,
+    "gold_equation": 4
+  },
+  "note": "v1 = 학습 노트북 규칙(재현 확인), v3 = open_answer_scoring_v3.py. 객관식 판정은 동일."
+}

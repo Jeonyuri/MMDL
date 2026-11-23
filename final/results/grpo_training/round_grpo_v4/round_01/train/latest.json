@@ -1,0 +1,24 @@
+{
+  "cursor": 1160,
+  "optimizer_step": 290,
+  "identity": "4bb14bc3d7e619e47967de38febeb8f8c8b71fd0b5ed5e18ca41db61446cc9bf",
+  "status": "complete",
+  "adapter": "/content/drive/MyDrive/VIRL39K_RFT_4B/round_grpo_v4/round_01/train/checkpoint_01160_00290",
+  "policy_id": "3ea65eaf69ed88f350cc6b7f8231aad06e0cb3979b0ef1fc4a9fce1ed1196574",
+  "timestamp": "2026-11-20T08:48:52Z",
+  "training_seconds": 6373.570158546001,
+  "forward_verified": true,
+  "last_metrics": {
+    "kl": 0.0014440368431678507,
+    "clip_fraction": 0.012771056659403257,
+    "old_delta_abs": 0.022011905210092664,
+    "max_abs_log_ratio": 0.3726428747177124,
+    "cursor": 1160,
+    "step": 290,
+    "loss": 0.00990747014475346,
+    "active_completions": 16,
+    "grad_norm": 0.0041793049313127995,
+    "seconds": 6373.566674851001
+  },
+  "peak_vram_gib": 11.840941905975342
+}

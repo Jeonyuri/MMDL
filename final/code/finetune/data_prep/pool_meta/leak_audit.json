@@ -1,0 +1,41 @@
+{
+  "candidates": 6415,
+  "suspects": 397,
+  "by_signal": {
+    "phash": 310,
+    "clip": 159,
+    "text": 11,
+    "exact": 0
+  },
+  "suspects_by_category": {
+    "(GradeSchool) Non-Geo Math": 134,
+    "Tables/Diagrams/Charts": 91,
+    "(GradeSchool) Science": 51,
+    "Social Science": 39,
+    "(GradeSchool) Geometric": 33,
+    "Spatial Reasoning": 28,
+    "Broader STEM Topics": 21
+  },
+  "suspects_by_source": {
+    "MMK12": 141,
+    "Processed": 112,
+    "MMMath": 44,
+    "M3CoT": 38,
+    "K12": 14,
+    "R1OneVision": 13,
+    "ScienceQA": 11,
+    "dvqa": 7,
+    "chartqa": 5,
+    "M3CoTConverted": 4,
+    "MMK12Converted": 3,
+    "geoqa_plus": 3,
+    "ai2d": 2
+  },
+  "clip_cos_median": 0.8874555826187134,
+  "text_sim_median": 0.5292381644248962,
+  "thresholds": {
+    "phash": 10,
+    "clip": 0.97,
+    "text": 0.84
+  }
+}
